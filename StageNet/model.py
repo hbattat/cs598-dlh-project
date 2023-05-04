@@ -11,7 +11,7 @@ torch.cuda.manual_seed(RANDOM_SEED)
 torch.backends.cudnn.deterministic=True
 
 class StageNet(nn.Module):
-    def __init__(self, input_dim, hidden_dim, conv_size, output_dim, levels, dropconnect=0., dropout=0., dropres=0.3):
+    def __init__(self, input_dim, hidden_dim, conv_size, output_dim, levels, dropconnect=0., dropout=0., dropres=0.3, ablation=None):
         super(StageNet, self).__init__()
         
         assert hidden_dim % levels == 0
@@ -117,14 +117,18 @@ class StageNet(nn.Module):
             local_h = local_h * local_dis.unsqueeze(1)
             
             #Re-calibrate Progression patterns
-            local_theme = torch.mean(local_h, dim=-1)
-            local_theme = self.nn_scale(local_theme)
-            local_theme = torch.relu(local_theme)
-            local_theme = self.nn_rescale(local_theme)
-            local_theme = torch.sigmoid(local_theme)
+            if self.ablation == 'reduced':
+                local_h = local_h[:,:,0]  # Abalation test without convolutional module
+            else: 
+                local_theme = torch.mean(local_h, dim=-1)
+                local_theme = self.nn_scale(local_theme)
+                local_theme = torch.relu(local_theme)
+                local_theme = self.nn_rescale(local_theme)
+                local_theme = torch.sigmoid(local_theme)
             
-            local_h = self.nn_conv(local_h).squeeze(-1)
-            local_h = local_theme * local_h
+                local_h = self.nn_conv(local_h).squeeze(-1)
+                local_h = local_theme * local_h
+
             h.append(local_h)  
 
         origin_h = torch.stack(origin_h).permute(1, 0, 2)
