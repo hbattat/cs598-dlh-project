@@ -1,0 +1,955 @@
+!python3.10 train.py --batch_size 1440 --data_path='./data/decompensation' --file_name='ablation_model'
+
+/content/StageNet/train.py:4: DeprecationWarning: the imp module is deprecated in favour of importlib and slated for removal in Python 3.12; see the module's documentation for alternative uses
+  import imp
+Preparing training data ... 
+Constructing model ... 
+available device: cuda:0
+Start training ... 
+Chunk 0, Batch 0: Loss = 995.8267
+
+==>Predicting on validation
+Valid loss = 50.0585
+
+
+confusion matrix:
+[[106021      0]
+ [   929      0]]
+/content/StageNet/utils/metrics.py:23: RuntimeWarning: invalid value encountered in float_scalars
+  prec1 = cf[1][1] / (cf[1][1] + cf[0][1])
+accuracy = 0.9913136959075928
+precision class 0 = 0.9913136959075928
+precision class 1 = nan
+recall class 0 = 1.0
+recall class 1 = 0.0
+AUC of ROC = 0.7203567597535792
+AUC of PRC = 0.018525651270703117
+min(+P, Se) = 0.025734845712891818
+
+
+------------ Save best model ------------
+
+Chunk 1, Batch 0: Loss = 211.3503
+
+==>Predicting on validation
+Valid loss = 48.5563
+
+
+confusion matrix:
+[[106021      0]
+ [   929      0]]
+/content/StageNet/utils/metrics.py:23: RuntimeWarning: invalid value encountered in float_scalars
+  prec1 = cf[1][1] / (cf[1][1] + cf[0][1])
+accuracy = 0.9913136959075928
+precision class 0 = 0.9913136959075928
+precision class 1 = nan
+recall class 0 = 1.0
+recall class 1 = 0.0
+AUC of ROC = 0.7734125352362052
+AUC of PRC = 0.021434720890814794
+min(+P, Se) = 0.027018402297627912
+
+
+------------ Save best model ------------
+
+Chunk 2, Batch 0: Loss = 192.7158
+
+==>Predicting on validation
+Valid loss = 51.2804
+
+
+confusion matrix:
+[[103044   2977]
+ [   821    108]]
+accuracy = 0.9644880890846252
+precision class 0 = 0.9920955300331116
+precision class 1 = 0.03500810265541077
+recall class 0 = 0.9719206690788269
+recall class 1 = 0.1162540391087532
+AUC of ROC = 0.7943245173648956
+AUC of PRC = 0.026529861330825927
+min(+P, Se) = 0.037209302325581395
+
+
+------------ Save best model ------------
+
+Chunk 3, Batch 0: Loss = 158.3118
+
+==>Predicting on validation
+Valid loss = 42.2717
+
+
+confusion matrix:
+[[105176    845]
+ [   856     73]]
+accuracy = 0.9840953946113586
+precision class 0 = 0.9919269680976868
+precision class 1 = 0.07952069491147995
+recall class 0 = 0.9920299053192139
+recall class 1 = 0.0785791203379631
+AUC of ROC = 0.8369866840666628
+AUC of PRC = 0.047484070938389536
+min(+P, Se) = 0.0823293172690763
+
+
+------------ Save best model ------------
+
+Chunk 4, Batch 0: Loss = 179.3221
+
+==>Predicting on validation
+Valid loss = 43.6416
+
+
+confusion matrix:
+[[105183    838]
+ [   789    140]]
+accuracy = 0.9847872853279114
+precision class 0 = 0.9925546646118164
+precision class 1 = 0.14314928650856018
+recall class 0 = 0.9920958876609802
+recall class 1 = 0.1506996750831604
+AUC of ROC = 0.84633112218593
+AUC of PRC = 0.07892340323361786
+min(+P, Se) = 0.14623655913978495
+
+
+------------ Save best model ------------
+
+Chunk 5, Batch 0: Loss = 141.7094
+
+==>Predicting on validation
+Valid loss = 48.8954
+
+
+confusion matrix:
+[[104971   1050]
+ [   758    171]]
+accuracy = 0.9830949306488037
+precision class 0 = 0.992830753326416
+precision class 1 = 0.14004914462566376
+recall class 0 = 0.9900963306427002
+recall class 1 = 0.18406888842582703
+AUC of ROC = 0.8528577654797536
+AUC of PRC = 0.10329470743822533
+min(+P, Se) = 0.15987460815047022
+
+
+------------ Save best model ------------
+
+Chunk 6, Batch 0: Loss = 165.7604
+
+==>Predicting on validation
+Valid loss = 41.1558
+
+
+confusion matrix:
+[[105581    440]
+ [   765    164]]
+accuracy = 0.9887330532073975
+precision class 0 = 0.9928064942359924
+precision class 1 = 0.2715231776237488
+recall class 0 = 0.9958499073982239
+recall class 1 = 0.17653390765190125
+AUC of ROC = 0.8439962627384917
+AUC of PRC = 0.15911528342022174
+min(+P, Se) = 0.21818181818181817
+
+
+------------ Save best model ------------
+
+Chunk 7, Batch 0: Loss = 156.1721
+
+==>Predicting on validation
+Valid loss = 47.5862
+
+
+confusion matrix:
+[[105322    699]
+ [   719    210]]
+accuracy = 0.9867414832115173
+precision class 0 = 0.9932196140289307
+precision class 1 = 0.23102310299873352
+recall class 0 = 0.9934069514274597
+recall class 1 = 0.2260495126247406
+AUC of ROC = 0.8504060607689385
+AUC of PRC = 0.17605651822361157
+min(+P, Se) = 0.2271259418729817
+
+
+------------ Save best model ------------
+
+Chunk 8, Batch 0: Loss = 149.9070
+
+==>Predicting on validation
+Valid loss = 45.7939
+
+
+confusion matrix:
+[[105122    899]
+ [   709    220]]
+accuracy = 0.984964907169342
+precision class 0 = 0.9933006167411804
+precision class 1 = 0.19660411775112152
+recall class 0 = 0.9915205240249634
+recall class 1 = 0.23681378364562988
+AUC of ROC = 0.8500470015744895
+AUC of PRC = 0.18676355459656327
+min(+P, Se) = 0.2163616792249731
+
+
+------------ Save best model ------------
+
+Chunk 9, Batch 0: Loss = 147.6333
+
+==>Predicting on validation
+Valid loss = 35.7653
+
+
+confusion matrix:
+[[105608    413]
+ [   774    155]]
+accuracy = 0.9889013767242432
+precision class 0 = 0.9927243590354919
+precision class 1 = 0.27288731932640076
+recall class 0 = 0.9961045384407043
+recall class 1 = 0.16684606671333313
+AUC of ROC = 0.86282744784735
+AUC of PRC = 0.15496551391387717
+min(+P, Se) = 0.21205597416576966
+
+Chunk 10, Batch 0: Loss = 120.1892
+
+==>Predicting on validation
+Valid loss = 56.7890
+
+
+confusion matrix:
+[[104253   1768]
+ [   639    290]]
+accuracy = 0.9774941802024841
+precision class 0 = 0.9939080476760864
+precision class 1 = 0.14091350138187408
+recall class 0 = 0.9833240509033203
+recall class 1 = 0.3121636211872101
+AUC of ROC = 0.8568325350252269
+AUC of PRC = 0.13852182880227867
+min(+P, Se) = 0.20667384284176535
+
+Chunk 11, Batch 0: Loss = 139.7175
+
+==>Predicting on validation
+Valid loss = 43.0077
+
+
+confusion matrix:
+[[105365    656]
+ [   765    164]]
+accuracy = 0.9867134094238281
+precision class 0 = 0.9927918314933777
+precision class 1 = 0.20000000298023224
+recall class 0 = 0.9938125610351562
+recall class 1 = 0.17653390765190125
+AUC of ROC = 0.8504109900277794
+AUC of PRC = 0.11792532254148073
+min(+P, Se) = 0.18514531754574812
+
+Chunk 12, Batch 0: Loss = 111.3621
+
+==>Predicting on validation
+Valid loss = 37.1092
+
+
+confusion matrix:
+[[105275    746]
+ [   738    191]]
+accuracy = 0.9861243367195129
+precision class 0 = 0.9930385947227478
+precision class 1 = 0.20384204387664795
+recall class 0 = 0.9929636716842651
+recall class 1 = 0.2055974155664444
+AUC of ROC = 0.8652946662708505
+AUC of PRC = 0.1300759211385739
+min(+P, Se) = 0.20452099031216361
+
+Chunk 13, Batch 0: Loss = 136.7890
+
+==>Predicting on validation
+Valid loss = 39.6261
+
+
+confusion matrix:
+[[105205    816]
+ [   760    169]]
+accuracy = 0.9852641224861145
+precision class 0 = 0.992827832698822
+precision class 1 = 0.17157360911369324
+recall class 0 = 0.9923034310340881
+recall class 1 = 0.1819160431623459
+AUC of ROC = 0.8685206656613279
+AUC of PRC = 0.09467268248878052
+min(+P, Se) = 0.17653390742734124
+
+Chunk 14, Batch 0: Loss = 108.9303
+
+==>Predicting on validation
+Valid loss = 38.6104
+
+
+confusion matrix:
+[[105319    702]
+ [   780    149]]
+accuracy = 0.9861430525779724
+precision class 0 = 0.9926483631134033
+precision class 1 = 0.17508813738822937
+recall class 0 = 0.9933786988258362
+recall class 1 = 0.16038751602172852
+AUC of ROC = 0.8592016200783342
+AUC of PRC = 0.09231769989062796
+min(+P, Se) = 0.16469321851453175
+
+Chunk 15, Batch 0: Loss = 158.6624
+
+==>Predicting on validation
+Valid loss = 37.7164
+
+
+confusion matrix:
+[[105288    733]
+ [   818    111]]
+accuracy = 0.9854978919029236
+precision class 0 = 0.992290735244751
+precision class 1 = 0.13151659071445465
+recall class 0 = 0.9930862784385681
+recall class 1 = 0.11948331445455551
+AUC of ROC = 0.8583440914872877
+AUC of PRC = 0.06562668359757053
+min(+P, Se) = 0.1316348195329087
+
+Chunk 16, Batch 0: Loss = 129.4844
+
+==>Predicting on validation
+Valid loss = 44.1463
+
+
+confusion matrix:
+[[104845   1176]
+ [   763    166]]
+accuracy = 0.9818700551986694
+precision class 0 = 0.9927751421928406
+precision class 1 = 0.1236959770321846
+recall class 0 = 0.9889078736305237
+recall class 1 = 0.17868675291538239
+AUC of ROC = 0.855236597368056
+AUC of PRC = 0.07834670690214077
+min(+P, Se) = 0.15096359743040685
+
+Chunk 17, Batch 0: Loss = 130.0925
+
+==>Predicting on validation
+Valid loss = 37.1581
+
+
+confusion matrix:
+[[105436    585]
+ [   833     96]]
+accuracy = 0.9867414832115173
+precision class 0 = 0.9921613931655884
+precision class 1 = 0.1409691572189331
+recall class 0 = 0.9944822192192078
+recall class 1 = 0.10333692282438278
+AUC of ROC = 0.8642364544043203
+AUC of PRC = 0.07115055837131465
+min(+P, Se) = 0.1301498127340824
+
+Chunk 18, Batch 0: Loss = 136.6754
+
+==>Predicting on validation
+Valid loss = 40.2745
+
+
+confusion matrix:
+[[105227    794]
+ [   796    133]]
+accuracy = 0.9851332306861877
+precision class 0 = 0.9924921989440918
+precision class 1 = 0.1434735655784607
+recall class 0 = 0.9925109148025513
+recall class 1 = 0.14316469430923462
+AUC of ROC = 0.8558284282469822
+AUC of PRC = 0.07513096294730064
+min(+P, Se) = 0.1478723404255319
+
+Chunk 19, Batch 0: Loss = 125.8724
+
+==>Predicting on validation
+Valid loss = 37.6995
+
+
+confusion matrix:
+[[105339    682]
+ [   786    143]]
+accuracy = 0.9862739443778992
+precision class 0 = 0.9925936460494995
+precision class 1 = 0.1733333319425583
+recall class 0 = 0.9935672879219055
+recall class 1 = 0.1539289504289627
+AUC of ROC = 0.8555931183241731
+AUC of PRC = 0.0814468141886901
+min(+P, Se) = 0.16774193548387098
+
+Chunk 20, Batch 0: Loss = 130.3142
+
+==>Predicting on validation
+Valid loss = 34.7423
+
+
+confusion matrix:
+[[105559    462]
+ [   813    116]]
+accuracy = 0.9880785346031189
+precision class 0 = 0.9923570156097412
+precision class 1 = 0.2006920427083969
+recall class 0 = 0.995642364025116
+recall class 1 = 0.12486544996500015
+AUC of ROC = 0.8597347211987341
+AUC of PRC = 0.08223397989129065
+min(+P, Se) = 0.1668460710441335
+
+Chunk 21, Batch 0: Loss = 115.9083
+
+==>Predicting on validation
+Valid loss = 40.9226
+
+
+confusion matrix:
+[[105252    769]
+ [   764    165]]
+accuracy = 0.9856662154197693
+precision class 0 = 0.9927935600280762
+precision class 1 = 0.17665952444076538
+recall class 0 = 0.9927467107772827
+recall class 1 = 0.1776103377342224
+AUC of ROC = 0.8464204732516942
+AUC of PRC = 0.09596227265604414
+min(+P, Se) = 0.17722878625134264
+
+Chunk 22, Batch 0: Loss = 131.1250
+
+==>Predicting on validation
+Valid loss = 37.9950
+
+
+confusion matrix:
+[[105394    627]
+ [   756    173]]
+accuracy = 0.9870687127113342
+precision class 0 = 0.9928780198097229
+precision class 1 = 0.2162500023841858
+recall class 0 = 0.9940860867500305
+recall class 1 = 0.18622174859046936
+AUC of ROC = 0.8500384730936938
+AUC of PRC = 0.10993049746511499
+min(+P, Se) = 0.200859291084855
+
+Chunk 23, Batch 0: Loss = 142.0527
+
+==>Predicting on validation
+Valid loss = 36.7851
+
+
+confusion matrix:
+[[105526    495]
+ [   791    138]]
+accuracy = 0.9879757165908813
+precision class 0 = 0.9925599694252014
+precision class 1 = 0.21800947189331055
+recall class 0 = 0.9953311085700989
+recall class 1 = 0.14854682981967926
+AUC of ROC = 0.858725603938022
+AUC of PRC = 0.09868754425994325
+min(+P, Se) = 0.19037433155080213
+
+Chunk 24, Batch 0: Loss = 128.4671
+
+==>Predicting on validation
+Valid loss = 36.0237
+
+
+confusion matrix:
+[[105377    644]
+ [   754    175]]
+accuracy = 0.9869284629821777
+precision class 0 = 0.9928955435752869
+precision class 1 = 0.21367521584033966
+recall class 0 = 0.9939257502555847
+recall class 1 = 0.1883745938539505
+AUC of ROC = 0.8679462369444061
+AUC of PRC = 0.13063531994574817
+min(+P, Se) = 0.20559741657696448
+
+Chunk 25, Batch 0: Loss = 102.4227
+
+==>Predicting on validation
+Valid loss = 37.9492
+
+
+confusion matrix:
+[[105263    758]
+ [   737    192]]
+accuracy = 0.9860215187072754
+precision class 0 = 0.9930471777915955
+precision class 1 = 0.20210526883602142
+recall class 0 = 0.9928504824638367
+recall class 1 = 0.20667384564876556
+AUC of ROC = 0.8619240025248771
+AUC of PRC = 0.12674488267436126
+min(+P, Se) = 0.2027310924369748
+
+Chunk 26, Batch 0: Loss = 113.3671
+
+==>Predicting on validation
+Valid loss = 38.4297
+
+
+confusion matrix:
+[[105411    610]
+ [   763    166]]
+accuracy = 0.9871622323989868
+precision class 0 = 0.9928137063980103
+precision class 1 = 0.21391752362251282
+recall class 0 = 0.9942464232444763
+recall class 1 = 0.17868675291538239
+AUC of ROC = 0.844427265760224
+AUC of PRC = 0.1008253526104001
+min(+P, Se) = 0.1916038751345533
+
+Chunk 27, Batch 0: Loss = 123.2901
+
+==>Predicting on validation
+Valid loss = 38.5775
+
+
+confusion matrix:
+[[105386    635]
+ [   768    161]]
+accuracy = 0.9868817329406738
+precision class 0 = 0.9927652478218079
+precision class 1 = 0.2022613137960434
+recall class 0 = 0.9940106272697449
+recall class 1 = 0.17330463230609894
+AUC of ROC = 0.8510372597243946
+AUC of PRC = 0.09976459441652101
+min(+P, Se) = 0.18299246501614638
+
+Chunk 28, Batch 0: Loss = 92.3691
+
+==>Predicting on validation
+Valid loss = 34.7143
+
+
+confusion matrix:
+[[105488    533]
+ [   773    156]]
+accuracy = 0.9877886772155762
+precision class 0 = 0.9927254319190979
+precision class 1 = 0.22641509771347046
+recall class 0 = 0.9949727058410645
+recall class 1 = 0.1679224967956543
+AUC of ROC = 0.8639786150780759
+AUC of PRC = 0.12456356231619418
+min(+P, Se) = 0.193446088794926
+
+Chunk 29, Batch 0: Loss = 125.0772
+
+==>Predicting on validation
+Valid loss = 39.8229
+
+
+confusion matrix:
+[[104921   1100]
+ [   703    226]]
+accuracy = 0.9831416606903076
+precision class 0 = 0.9933443069458008
+precision class 1 = 0.17043741047382355
+recall class 0 = 0.9896246790885925
+recall class 1 = 0.2432723343372345
+AUC of ROC = 0.8757489998655646
+AUC of PRC = 0.12981753970698906
+min(+P, Se) = 0.21420882669537136
+
+Chunk 30, Batch 0: Loss = 122.1189
+
+==>Predicting on validation
+Valid loss = 38.6021
+
+
+confusion matrix:
+[[105309    712]
+ [   749    180]]
+accuracy = 0.9863393902778625
+precision class 0 = 0.9929378032684326
+precision class 1 = 0.20179371535778046
+recall class 0 = 0.9932843446731567
+recall class 1 = 0.19375672936439514
+AUC of ROC = 0.84858465647721
+AUC of PRC = 0.11422268044073725
+min(+P, Se) = 0.20129171151776104
+
+Chunk 31, Batch 0: Loss = 112.6699
+
+==>Predicting on validation
+Valid loss = 36.6218
+
+
+confusion matrix:
+[[105419    602]
+ [   746    183]]
+accuracy = 0.9873960018157959
+precision class 0 = 0.9929732084274292
+precision class 1 = 0.23312102258205414
+recall class 0 = 0.994321882724762
+recall class 1 = 0.19698600471019745
+AUC of ROC = 0.8605545874094099
+AUC of PRC = 0.12255829341066268
+min(+P, Se) = 0.2131324004305705
+
+Chunk 32, Batch 0: Loss = 117.8502
+
+==>Predicting on validation
+Valid loss = 43.8444
+
+
+confusion matrix:
+[[104827   1194]
+ [   710    219]]
+accuracy = 0.9821972846984863
+precision class 0 = 0.9932724833488464
+precision class 1 = 0.15498939156532288
+recall class 0 = 0.9887380599975586
+recall class 1 = 0.23573735356330872
+AUC of ROC = 0.8441791834221278
+AUC of PRC = 0.11082893134941083
+min(+P, Se) = 0.1924731182795699
+
+Chunk 33, Batch 0: Loss = 119.5467
+
+==>Predicting on validation
+Valid loss = 38.4426
+
+
+confusion matrix:
+[[105247    774]
+ [   741    188]]
+accuracy = 0.9858344793319702
+precision class 0 = 0.9930086135864258
+precision class 1 = 0.19542619585990906
+recall class 0 = 0.9926995635032654
+recall class 1 = 0.2023681402206421
+AUC of ROC = 0.8585963365362483
+AUC of PRC = 0.11244309886799651
+min(+P, Se) = 0.2
+
+Chunk 34, Batch 0: Loss = 102.7408
+
+==>Predicting on validation
+Valid loss = 37.1622
+
+
+confusion matrix:
+[[105236    785]
+ [   722    207]]
+accuracy = 0.9859092831611633
+precision class 0 = 0.9931859970092773
+precision class 1 = 0.20866934955120087
+recall class 0 = 0.9925957918167114
+recall class 1 = 0.2228202372789383
+AUC of ROC = 0.8441692030690063
+AUC of PRC = 0.11792749098269023
+min(+P, Se) = 0.21420882669537136
+
+Chunk 35, Batch 0: Loss = 128.3599
+
+==>Predicting on validation
+Valid loss = 37.9891
+
+
+confusion matrix:
+[[105196    825]
+ [   711    218]]
+accuracy = 0.9856381416320801
+precision class 0 = 0.9932865500450134
+precision class 1 = 0.2090124636888504
+recall class 0 = 0.9922184944152832
+recall class 1 = 0.23466092348098755
+AUC of ROC = 0.8590142016363739
+AUC of PRC = 0.16340806808357833
+min(+P, Se) = 0.22615219721329047
+
+Chunk 36, Batch 0: Loss = 114.3310
+
+==>Predicting on validation
+Valid loss = 34.5291
+
+
+confusion matrix:
+[[105234    787]
+ [   703    226]]
+accuracy = 0.9860682487487793
+precision class 0 = 0.9933639764785767
+precision class 1 = 0.2230997085571289
+recall class 0 = 0.9925769567489624
+recall class 1 = 0.2432723343372345
+AUC of ROC = 0.863694550673385
+AUC of PRC = 0.1622518516181012
+min(+P, Se) = 0.23523093447905477
+
+Chunk 37, Batch 0: Loss = 117.4959
+
+==>Predicting on validation
+Valid loss = 35.8513
+
+
+confusion matrix:
+[[105202    819]
+ [   705    224]]
+accuracy = 0.9857503771781921
+precision class 0 = 0.9933432340621948
+precision class 1 = 0.21476510167121887
+recall class 0 = 0.9922751188278198
+recall class 1 = 0.24111948907375336
+AUC of ROC = 0.8678851821595674
+AUC of PRC = 0.14801214832338255
+min(+P, Se) = 0.2320855614973262
+
+Chunk 38, Batch 0: Loss = 125.2454
+
+==>Predicting on validation
+Valid loss = 34.6066
+
+
+confusion matrix:
+[[105290    731]
+ [   706    223]]
+accuracy = 0.9865638017654419
+precision class 0 = 0.9933393597602844
+precision class 1 = 0.23375262320041656
+recall class 0 = 0.9931051135063171
+recall class 1 = 0.2400430589914322
+AUC of ROC = 0.8707986076524088
+AUC of PRC = 0.15836190511363013
+min(+P, Se) = 0.23927038626609443
+
+Chunk 39, Batch 0: Loss = 104.0874
+
+==>Predicting on validation
+Valid loss = 38.8042
+
+
+confusion matrix:
+[[104760   1261]
+ [   649    280]]
+accuracy = 0.9821411967277527
+precision class 0 = 0.9938430190086365
+precision class 1 = 0.181700199842453
+recall class 0 = 0.9881061315536499
+recall class 1 = 0.3013993501663208
+AUC of ROC = 0.8601632621292841
+AUC of PRC = 0.18488779700828784
+min(+P, Se) = 0.256989247311828
+
+Chunk 40, Batch 0: Loss = 108.3724
+
+==>Predicting on validation
+Valid loss = 36.7404
+
+
+confusion matrix:
+[[105055    966]
+ [   692    237]]
+accuracy = 0.9844974279403687
+precision class 0 = 0.9934560656547546
+precision class 1 = 0.19700747728347778
+recall class 0 = 0.9908885955810547
+recall class 1 = 0.25511303544044495
+AUC of ROC = 0.8550845264331073
+AUC of PRC = 0.13006843904581933
+min(+P, Se) = 0.23258306538049303
+
+Chunk 41, Batch 0: Loss = 87.3574
+
+==>Predicting on validation
+Valid loss = 37.4783
+
+
+confusion matrix:
+[[104927   1094]
+ [   680    249]]
+accuracy = 0.9834128022193909
+precision class 0 = 0.9935610294342041
+precision class 1 = 0.18540580570697784
+recall class 0 = 0.9896813035011292
+recall class 1 = 0.2680301368236542
+AUC of ROC = 0.8696318353324177
+AUC of PRC = 0.13536515204563457
+min(+P, Se) = 0.23845327604726102
+
+Chunk 42, Batch 0: Loss = 100.3478
+
+==>Predicting on validation
+Valid loss = 35.6143
+
+
+confusion matrix:
+[[105126    895]
+ [   718    211]]
+accuracy = 0.9849181771278381
+precision class 0 = 0.9932164549827576
+precision class 1 = 0.19077757000923157
+recall class 0 = 0.9915582537651062
+recall class 1 = 0.22712594270706177
+AUC of ROC = 0.8636931698717325
+AUC of PRC = 0.11188913638835887
+min(+P, Se) = 0.2077502691065662
+
+Chunk 43, Batch 0: Loss = 117.7396
+
+==>Predicting on validation
+Valid loss = 37.8934
+
+
+confusion matrix:
+[[105072    949]
+ [   719    210]]
+accuracy = 0.9844039082527161
+precision class 0 = 0.9932035803794861
+precision class 1 = 0.18119068443775177
+recall class 0 = 0.9910489320755005
+recall class 1 = 0.2260495126247406
+AUC of ROC = 0.8436249996941423
+AUC of PRC = 0.14262195728414367
+min(+P, Se) = 0.2077502691065662
+
+Chunk 44, Batch 0: Loss = 113.5918
+
+==>Predicting on validation
+Valid loss = 38.0767
+
+
+confusion matrix:
+[[104911   1110]
+ [   708    221]]
+accuracy = 0.9830014109611511
+precision class 0 = 0.9932966828346252
+precision class 1 = 0.1660405695438385
+recall class 0 = 0.9895303845405579
+recall class 1 = 0.23789019882678986
+AUC of ROC = 0.8512902154800881
+AUC of PRC = 0.1160878887901016
+min(+P, Se) = 0.1978494623655914
+
+Chunk 45, Batch 0: Loss = 115.0823
+
+==>Predicting on validation
+Valid loss = 34.5263
+
+
+confusion matrix:
+[[105362    659]
+ [   720    209]]
+accuracy = 0.9871061444282532
+precision class 0 = 0.9932128190994263
+precision class 1 = 0.24078340828418732
+recall class 0 = 0.9937842488288879
+recall class 1 = 0.22497308254241943
+AUC of ROC = 0.8627579204229591
+AUC of PRC = 0.16271559024607485
+min(+P, Se) = 0.232508073196986
+
+Chunk 46, Batch 0: Loss = 105.5599
+
+==>Predicting on validation
+Valid loss = 35.4795
+
+
+confusion matrix:
+[[104980   1041]
+ [   684    245]]
+accuracy = 0.9838709831237793
+precision class 0 = 0.9935266375541687
+precision class 1 = 0.1905132234096527
+recall class 0 = 0.9901812076568604
+recall class 1 = 0.2637244462966919
+AUC of ROC = 0.8642345405726177
+AUC of PRC = 0.1650403869672592
+min(+P, Se) = 0.22927879440258342
+
+Chunk 47, Batch 0: Loss = 121.3017
+
+==>Predicting on validation
+Valid loss = 39.0939
+
+
+confusion matrix:
+[[104832   1189]
+ [   674    255]]
+accuracy = 0.9825806617736816
+precision class 0 = 0.993611752986908
+precision class 1 = 0.17659279704093933
+recall class 0 = 0.9887852668762207
+recall class 1 = 0.2744886875152588
+AUC of ROC = 0.8726504758805984
+AUC of PRC = 0.14933232588498058
+min(+P, Se) = 0.2288770053475936
+
+Chunk 48, Batch 0: Loss = 100.8745
+
+==>Predicting on validation
+Valid loss = 35.6901
+
+
+confusion matrix:
+[[105002   1019]
+ [   678    251]]
+accuracy = 0.9841327667236328
+precision class 0 = 0.993584394454956
+precision class 1 = 0.19763779640197754
+recall class 0 = 0.9903886914253235
+recall class 1 = 0.2701829969882965
+AUC of ROC = 0.8788280047977578
+AUC of PRC = 0.14928859352668297
+min(+P, Se) = 0.24086021505376345
+
+Chunk 49, Batch 0: Loss = 106.8781
+
+==>Predicting on validation
+Valid loss = 37.0760
+
+
+confusion matrix:
+[[104757   1264]
+ [   642    287]]
+accuracy = 0.9821785688400269
+precision class 0 = 0.9939088821411133
+precision class 1 = 0.1850419044494629
+recall class 0 = 0.9880778193473816
+recall class 1 = 0.3089343309402466
+AUC of ROC = 0.8837642234880676
+AUC of PRC = 0.1789921514331998
+min(+P, Se) = 0.2529601722282024
+
+Testing model ... 
+last saved model is in chunk 8
+Test loss = 123.3374
+
+
+confusion matrix:
+[[462038   4441]
+ [  6944   2059]]
+accuracy = 0.9760558605194092
+precision class 0 = 0.9851934909820557
+precision class 1 = 0.31676924228668213
+recall class 0 = 0.9904797673225403
+recall class 1 = 0.22870154678821564
+AUC of ROC = 0.8732257727081959
+AUC of PRC = 0.19307491717547054
+min(+P, Se) = 0.2737976230145507
