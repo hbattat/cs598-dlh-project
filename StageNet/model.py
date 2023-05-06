@@ -25,6 +25,7 @@ class StageNet(nn.Module):
         self.output_dim = output_dim
         self.levels = levels
         self.chunk_size = hidden_dim // levels
+        self.ablation = ablation
         
         self.kernel = nn.Linear(int(input_dim+1), int(hidden_dim*4+levels*2))
         nn.init.xavier_uniform_(self.kernel.weight)
