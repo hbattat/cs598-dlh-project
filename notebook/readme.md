@@ -3,8 +3,7 @@
 
 # Reproducibility Summary
 
-# Overview of the data with any helpful charts and visualizations from the report and ideally directly using
-the dataset in the notebook (maybe link to the data folder or URL).
+# Overview of the data 
 
 The StageNet utilized two datasets, namely, ESRD
 and MIMIC III. However, due to the private nature
@@ -14,7 +13,7 @@ for Intensive Care III) dataset is a publicly accessi-
 ble dataset that features de-identified health-related
 information of over 40,000 patients admitted to the
 Beth Israel Deaconess Medical Center in Boston,
-Massachusetts, USA, from 2001 to 2012 [2]. We
+Massachusetts, USA, from 2001 to 2012 [2]. You can
 obtained access to this dataset through an applica-
 tion submitted to physionet.org. Some statistics is
 shown in Table 5 [1][2]
