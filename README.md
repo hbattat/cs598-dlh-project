@@ -1,4 +1,4 @@
-# cs598-dl4h-project
+# CS598-DL4H-Project
 
 This project is a reproduction of [StageNet](https://github.com/v1xerunt/StageNet), and the data preprocessing stage applies the [MIMIC-III Benchmarks](https://github.com/YerevaNN/mimic3-benchmarks/) workflow.
 
@@ -17,4 +17,7 @@ The model.py and train.py files are modified versions of StageNet files used for
 |Ablation Model | 0.193  | 0.873  | 0.274 |
 
 # References
-
+Junyi Gao, Cao Xiao, Yasha Wang, Wen Tang, Lucas M. Glass, Jimeng Sun. 2020. 
+StageNet: Stage-Aware Neural Networks for Health Risk Prediction. 
+In Proceedings of The Web Conference 2020 (WWW ’20), April 20–24, 2020, Taipei, Taiwan. ACM, New York, NY, USA, 11 pages. 
+https://doi.org/10.1145/3366423.3380136
