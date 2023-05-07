@@ -49,7 +49,7 @@ using the so-called progression theme. Finally, the
 adjusted patterns are used to predict the patient’s
 health risk.
 
-Please check the executable code examples stagenet_train.ipynb, please note that you need to apply the MIMIC-III dataset first.
+Please check the executable code examples [stagenet_train.ipynb](https://github.com/hbattat/cs598-dlh-project/blob/main/notebook/stagenet_train.ipynb), please note that you need to apply the MIMIC-III dataset first.
 
 # Summary of the key results.
 
