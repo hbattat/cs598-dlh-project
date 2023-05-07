@@ -26,3 +26,7 @@ Junyi Gao, Cao Xiao, Yasha Wang, Wen Tang, Lucas M. Glass, Jimeng Sun. 2020.
 StageNet: Stage-Aware Neural Networks for Health Risk Prediction. 
 In Proceedings of The Web Conference 2020 (WWW ’20), April 20–24, 2020, Taipei, Taiwan. ACM, New York, NY, USA, 11 pages. 
 https://doi.org/10.1145/3366423.3380136
+
+[StageNet](https://github.com/v1xerunt/StageNet)
+
+[MIMIC-III Benchmarks](https://github.com/YerevaNN/mimic3-benchmarks/)
