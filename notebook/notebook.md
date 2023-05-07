@@ -3,6 +3,10 @@
 
 # Reproducibility Summary
 
+We reproduced the stagenet result. The error of our result compared with the original paper are AUPRC 0.9%, AUROC 0.4%, min(Re,P+) 6%
+We consider it as a success reproduction result.
+Other than that, we run the abalation test which removed the convolution module of the model, the result shows the convolution module has a large impact of the StageNet performance.
+
 # Overview of the data 
 
 The StageNet utilized two datasets, namely, ESRD
