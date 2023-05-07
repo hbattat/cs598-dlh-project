@@ -57,10 +57,13 @@ Please check the executable code examples stagenet_train.ipynb, please note that
 |------------------|------------------|------------------|------------------|
 | Original | 0.323  | 0.903  | 0.372 |
 | Pre-Trained Model  | 0.337  | 0.903  | 0.372 |
-| Reproduced  | 0.320  | 0.907  | 0.348 |
-| Parameter Tunning  | 0.261  | 0.885  | 0.296 |
+| Reproduced*  | 0.320  | 0.907  | 0.348 |
+| Parameter Tunning**  | 0.261  | 0.885  | 0.296 |
 |Ablation Model | 0.193  | 0.873  | 0.274 |
 
+
+* Same setup with the original paper with different batch size 1440 vs 128
+** Use hidden dimention of 72 and chunk size 36 VS Original paper 384 and 128
 Error between reproduced result and the original Paper: AUPRC 0.9%, AUROC 0.4%, min(Re,P+) 6%
 
 
