@@ -1,3 +1,5 @@
+# This is a modified version of StageNet model.py for abalation test, most of the code are referenced from https://github.com/v1xerunt/StageNet
+
 import torch
 from torch import nn
 import torch.nn.utils.rnn as rnn_utils
