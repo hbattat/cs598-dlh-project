@@ -8,7 +8,7 @@ Furthermore, we conducted an ablation test by removing the convolution module fr
 To ensure reproducibility, we followed the MIMIC-III benchmark preprocessing steps. We utilized the Google Colab premium platform for training and testing purposes.
 
 
-# Overview of the data 
+# Overview Of The Data 
 
 The StageNet utilized two datasets, namely, ESRD
 and MIMIC III. However, due to the private nature
@@ -30,7 +30,7 @@ shown in table below  [1][2]
 | #visit with negative label  | 2,156,750  | 
 
 
-# Overview of the methodology and experiments run
+# Overview Of The Methodology and Experiments Run
 
 The input data is first preprocessed and split into
 different stages based on the disease progression
@@ -58,7 +58,7 @@ health risk.
 
 Please check the executable code examples [stagenet_train.ipynb](https://github.com/hbattat/cs598-dlh-project/blob/main/notebook/stagenet_train.ipynb), for the preprocessing, please refer to [preprocessing.ipynb](https://github.com/hbattat/cs598-dlh-project/blob/main/notebook/preprocessing.ipynb) please note that you need to have access to MIMIC-III dataset.
 
-# Summary of the key results.
+# Summary Of The Key Results
 
 | Model | AUPRC | AUROC | min(Re, P+)
 |------------------|------------------|------------------|------------------|
