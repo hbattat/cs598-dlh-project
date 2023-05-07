@@ -22,7 +22,7 @@ Massachusetts, USA, from 2001 to 2012 [2]. You can
 obtained access to this dataset through an applica-
 tion submitted to physionet.org. Some statistics is
 shown in table below  [1][2]
-
+| -| Number | 
 |------------------|------------------|
 | #patients| Over 40,000 | 
 | #ICU stays  | 53,423 | 
