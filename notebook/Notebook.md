@@ -23,7 +23,7 @@ obtained access to this dataset through an applica-
 tion submitted to physionet.org. Some statistics is
 shown in Table 5 [1][2]
 
-# Overview of the methodology and experiments run, ideally with executable code examples
+# Overview of the methodology and experiments run
 
 The input data is first preprocessed and split into
 different stages based on the disease progression
@@ -48,6 +48,8 @@ the current disease stage and adjusts these patterns
 using the so-called progression theme. Finally, the
 adjusted patterns are used to predict the patient’s
 health risk.
+
+Please check the executable code examples stagenet_train.ipynb, please note that you need to apply the MIMIC-III dataset first.
 
 # Summary of the key results.
 
