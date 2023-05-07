@@ -1,11 +1,12 @@
-1. Preprocessing stage applies the [MIMIC-III Benchmarks](https://github.com/YerevaNN/mimic3-benchmarks/) workflow.
-2. Training Platform: Google Colab  Premium & Google Drive
 
 # Reproducibility Summary
 
-We reproduced the stagenet result. The error of our result compared with the original paper are AUPRC 0.9%, AUROC 0.4%, min(Re,P+) 6%
-We consider it as a success reproduction result.
-Other than that, we run the abalation test which removed the convolution module of the model, the result shows the convolution module has a large impact of the StageNet performance.
+We have successfully replicated the results of the StageNet model on the MIMIC-III decompensation risk prediction task, with only minor deviations from the original paper: AUPRC by 0.9%, AUROC by 0.4%, and min(Re, P+) by 6%. 
+
+Furthermore, we conducted an ablation test by removing the convolution module from the model. Our findings indicate that the convolution module significantly impacts the StageNet's performance. Additionally, we tuned the model's hyperparameters, including hidden dimension and chunk size, and observed a decrease in model performance with reduced hyperparameter values. However, the effect on AUROC was minimal. We also generated a small sample dataset to validate different parameter settings.
+
+To ensure reproducibility, we followed the MIMIC-III benchmark preprocessing steps. We utilized the Google Colab premium platform for training and testing purposes.
+
 
 # Overview of the data 
 
