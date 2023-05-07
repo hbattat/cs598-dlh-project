@@ -4,7 +4,7 @@ This project is a reproduction of [StageNet](https://github.com/v1xerunt/StageNe
 
 The model.py and train.py files are modified versions of StageNet files used for abalation test, as well as hidden_dim and chunk_size test.
 
-[The video demo]
+# [The video demo]
 
 # Result
 
