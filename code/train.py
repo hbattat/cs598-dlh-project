@@ -49,6 +49,7 @@ def parse_arguments(parser):
     parser.add_argument('--dropres_rate', type=float, default=0.3, help='Dropout rate in residue connection')
     parser.add_argument('--K', type=int, default=10, help='Value of hyper-parameter K')
     parser.add_argument('--chunk_level', type=int, default=3, help='Value of hyper-parameter K')
+    parser.add_argument('--ablation', type=int, default=0, help='Flag to use ablation test (reduced model)')
 
     args = parser.parse_args()
     return args
@@ -170,7 +171,7 @@ if __name__ == '__main__':
         device = torch.device("cuda:0" if torch.cuda.is_available() == True else 'cpu')
         print("available device: {}".format(device))
 
-        model = StageNet(args.input_dim+17, args.rnn_dim, args.K, args.output_dim, args.chunk_level, args.dropconnect_rate, args.dropout_rate, args.dropres_rate).to(device)
+        model = StageNet(args.input_dim+17, args.rnn_dim, args.K, args.output_dim, args.chunk_level, args.dropconnect_rate, args.dropout_rate, args.dropres_rate, args.ablation).to(device)
         optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
 
         '''Train phase'''
