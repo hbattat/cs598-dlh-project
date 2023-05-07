@@ -139,18 +139,18 @@ wget -o decompensation.tar.gz https://files.home.battat.us/api/public/dl/I0mJUD3
 tar -xkvf decompensation.tar.gz -C StageNet/data/
 mv StageNet/data/train/listfile.csv StageNet/data/train_listfile.csv
 mv StageNet/data/test/listfile.csv StageNet/data/test_listfile.csv
+cd StageNet/
 ```
 
 ### Train the model with original paper specs
 
 ```bash
-cd StageNet/
 python3 train.py --batch_size 3600  --test_mode=0 --data_path='./data/' --file_name='original_model'
 ```
 
 ### Train the model with reduced architecture 
 ```bash
-!python3 train.py --batch_size 3600  --ablation=1 --test_mode=0 --data_path='./data/' --file_name='test_model'
+python3 train.py --batch_size 3600  --ablation=1 --test_mode=0 --data_path='./data/' --file_name='test_model'
 ```
 
 # References
