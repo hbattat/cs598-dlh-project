@@ -56,7 +56,7 @@ using the so-called progression theme. Finally, the
 adjusted patterns are used to predict the patient’s
 health risk.
 
-![StageNet Model](https://github.com/hbattat/cs598-dlh-project/blob/main/notebook/stagenet.JPG)
+![StageNet Model](https://github.com/hbattat/cs598-dlh-project/blob/main/notebook/stagenet2.JPG)
 
 StageNet Model Source [1]
 
