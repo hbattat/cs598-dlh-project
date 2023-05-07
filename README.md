@@ -16,7 +16,7 @@ The model.py and train.py files are modified versions of StageNet files used for
 | Reproduced  | Row 3, Column 2  | Row 3, Column 3  |
 |Ablation Model | 0.193  | 0.873  | 0.274 |
 
-Error between reproduced and original Paper: AUPRC 0.9%, AUROC 0.4%, min(Re,P+) 6%
+Error between reproduced result and the original Paper: AUPRC 0.9%, AUROC 0.4%, min(Re,P+) 6%
 
 
 
