@@ -13,7 +13,7 @@ The model.py and train.py files are modified versions of StageNet files used for
 | Original | 0.323  | 0.903  | 0.372 |
 | Pre-Trained Model  | 0.337  | 0.903  | 0.372 |
 | Reproduced  | 0.320  | 0.907  | 0.348 |
-| Reduced Model  | Row 3, Column 2  | Row 3, Column 3  |
+| Parameter Tunning  | 0.261  | 0.885  | 0.296 |
 |Ablation Model | 0.193  | 0.873  | 0.274 |
 
 Error between reproduced result and the original Paper: AUPRC 0.9%, AUROC 0.4%, min(Re,P+) 6%
