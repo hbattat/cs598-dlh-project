@@ -56,6 +56,8 @@ using the so-called progression theme. Finally, the
 adjusted patterns are used to predict the patient’s
 health risk.
 
+![StageNet Model](https://github.com/hbattat/cs598-dlh-project/blob/main/notebook/stagenet.JPG)
+
 Please check the executable code examples [stagenet_train.ipynb](https://github.com/hbattat/cs598-dlh-project/blob/main/notebook/stagenet_train.ipynb), for the preprocessing, please refer to [preprocessing.ipynb](https://github.com/hbattat/cs598-dlh-project/blob/main/notebook/preprocessing.ipynb) please note that you need to have access to MIMIC-III dataset.
 
 # Summary Of The Key Results
