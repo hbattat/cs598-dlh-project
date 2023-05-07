@@ -96,27 +96,27 @@ python3 -m mimic3benchmark.scripts.create_decompensation data/root/ data/decompe
 ```
 
 ## Training the model
-### Install dependencies
+### Step 1: Install dependencies
 
 
 ```bash
 pip3 install numpy matplotlib torch scipy scikit-learn
 ```
 
-### Clone StageNet repo
+### Step 2: Clone StageNet repo
 
 ```bash
 git clone https://github.com/v1xerunt/StageNet.git
 ```
 
-### Replace modified files (model.py and train.py)
+### Step 3: Replace modified files (model.py and train.py)
 
 ```bash
 cp model.py StageNet/model.py
 cp train.py StageNet/train.py
 ```
 
-### Download decompensation data
+### Step 4: Download decompensation data
 
 We also need the decompensation data from the preprocessing step. We download the result files and extract them into the data direcotory of StageNet
 
@@ -125,7 +125,7 @@ We also need the decompensation data from the preprocessing step. We download th
 wget -o decompensation.tar.gz https://files.home.battat.us/api/public/dl/I0mJUD39
 ```
 
-### Extract decompensation into StageNet data dir
+### Step 5: Extract decompensation into StageNet data dir
 
 ```bash
 tar -xkvf decompensation.tar.gz -C StageNet/data/
@@ -134,19 +134,19 @@ mv StageNet/data/test/listfile.csv StageNet/data/test_listfile.csv
 cd StageNet/
 ```
 
-### Train the model with original paper specs
+### Train and test the model with original paper specs
 
 ```bash
 python3 train.py --batch_size 3600  --test_mode=0 --data_path='./data/' --file_name='original_model'
 ```
 
-### Train the model with pre-trained weights
+### Test the model with pre-trained weights
 
 ```bash
 python3 train.py --batch_size 3600  --test_mode=1 --data_path='./data/' --file_name='test_model'
 ```
 
-### Train the model with reduced architecture 
+### Train and test the model with reduced architecture 
 ```bash
 python3 train.py --batch_size 3600  --ablation=1 --test_mode=0 --data_path='./data/' --file_name='test_model'
 ```
