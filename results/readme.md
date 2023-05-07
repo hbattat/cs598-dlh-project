@@ -1,6 +1,6 @@
 1.abalation_test.txt contains the test result of the model without the convolutional module.
 
-2.reproduced.txt contains the result of using the same original paper hyperparameter, except using 1440 batch size instead of 128 to speed up training.
+2.reproduced.txt contains the result of using the same original paper hyperparameter, except using 1440 batch size instead of 128 to speed up the training.
 
 3.small_sample_result.txt contains the test results of using 400 random generated samples with different model configration.
 
