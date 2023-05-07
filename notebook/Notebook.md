@@ -70,7 +70,9 @@ Please check the executable code examples [stagenet_train.ipynb](https://github.
 
 
 * Same setup with the original paper with different batch size 1440 vs 128
+* 
 ** Use hidden dimention of 72 and chunk size 36 VS Original paper 384 and 128
+
 Error between reproduced result and the original Paper: AUPRC 0.9%, AUROC 0.4%, min(Re,P+) 6%
 
 
