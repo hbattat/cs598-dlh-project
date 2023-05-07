@@ -6,3 +6,5 @@ The model.py and train.py files are modified versions of StageNet files used for
 
 [The video demo]
 
+# References
+
