@@ -1,4 +1,4 @@
-# This is a modified version of StageNet model.py, most of the code are referenced from https://github.com/v1xerunt/StageNet
+# This is a modified version of StageNet train.py, most of the code are referenced from https://github.com/v1xerunt/StageNet
 
 import numpy as np
 import argparse
