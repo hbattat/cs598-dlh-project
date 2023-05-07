@@ -140,6 +140,12 @@ cd StageNet/
 python3 train.py --batch_size 3600  --test_mode=0 --data_path='./data/' --file_name='original_model'
 ```
 
+### Train the model with pre-trained weights
+
+```bash
+python3 train.py --batch_size 3600  --test_mode=1 --data_path='./data/' --file_name='test_model'
+```
+
 ### Train the model with reduced architecture 
 ```bash
 python3 train.py --batch_size 3600  --ablation=1 --test_mode=0 --data_path='./data/' --file_name='test_model'
