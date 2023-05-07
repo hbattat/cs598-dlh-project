@@ -103,6 +103,55 @@ python3 -m mimic3benchmark.scripts.create_in_hospital_mortality data/root/ data/
 python3 -m mimic3benchmark.scripts.create_decompensation data/root/ data/decompensation/
 ```
 
+## Training the model
+### Install dependencies
+
+
+```bash
+pip3 install numpy matplotlib torch scipy scikit-learn
+```
+
+### Clone StageNet repo
+
+```bash
+git clone https://github.com/v1xerunt/StageNet.git
+```
+
+### Replace modified files (model.py and train.py)
+
+```bash
+cp model.py StageNet/model.py
+cp train.py StageNet/train.py
+```
+
+### Download decompensation data
+
+We also need the decompensation data from the preprocessing step. We download the result files and extract them into the data direcotory of StageNet
+
+
+```bash
+wget -o decompensation.tar.gz https://files.home.battat.us/api/public/dl/I0mJUD39
+```
+
+### Extract decompensation into StageNet data dir
+
+```bash
+tar -xkvf decompensation.tar.gz -C StageNet/data/
+mv StageNet/data/train/listfile.csv StageNet/data/train_listfile.csv
+mv StageNet/data/test/listfile.csv StageNet/data/test_listfile.csv
+```
+
+### Train the model with original paper specs
+
+```bash
+cd StageNet/
+python3 train.py --batch_size 3600  --test_mode=0 --data_path='./data/' --file_name='original_model'
+```
+
+### Train the model with reduced architecture 
+```bash
+!python3 train.py --batch_size 3600  --ablation=1 --test_mode=0 --data_path='./data/' --file_name='test_model'
+```
 
 # References
 Junyi Gao, Cao Xiao, Yasha Wang, Wen Tang, Lucas M. Glass, Jimeng Sun. 2020. 
