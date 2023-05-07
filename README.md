@@ -6,5 +6,15 @@ The model.py and train.py files are modified versions of StageNet files used for
 
 [The video demo]
 
+# Result
+
+| Model | AUPRC | AUROC | min(Re, P+)
+|------------------|------------------|------------------|------------------|
+| Original | 0.323  | 0.903  | 0.372 |
+| Pre-Trained Model  | 0.337  | 0.903  | 0.372 |
+| Reproduced  | 0.320  | 0.907  | 0.348 |
+| Reproduced  | Row 3, Column 2  | Row 3, Column 3  |
+|Ablation Model | 0.193  | 0.873  | 0.274 |
+
 # References
 
