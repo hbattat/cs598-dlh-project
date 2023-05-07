@@ -4,6 +4,6 @@
 
 3.small_sample_result.txt contains the test results of using 400 random generated samples with different parameter set.
 
-4.trained_model is trained by full MIMIC-III decompensation train set. 
+4.trained_model is trained weights by using full MIMIC-III decompensation train set. 
 
 5.parameter_tuning_results.txt contains the test result of the model with hidden dimention of 72 and chunk size of 36
