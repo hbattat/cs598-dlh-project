@@ -1,0 +1,80 @@
+# Four test results for small samples
+
+Test 1: 400 samples, paper default (76, 72, 36)
+
+Testing model ... 
+last saved model is in chunk 49
+Test loss = 64.1322
+
+
+confusion matrix:
+[[106021      0]
+ [   929      0]]
+/content/StageNet/utils/metrics.py:23: RuntimeWarning: invalid value encountered in float_scalars
+  prec1 = cf[1][1] / (cf[1][1] + cf[0][1])
+accuracy = 0.9913136959075928
+precision class 0 = 0.9913136959075928
+precision class 1 = nan
+recall class 0 = 1.0
+recall class 1 = 0.0
+AUC of ROC = 0.7294929760295168
+AUC of PRC = 0.02065397267956014
+min(+P, Se) = 0.029173577910040004
+
+----------------------------------------------
+Test 2: 400 sample, (76, 360, 36)
+
+Testing model ... 
+last saved model is in chunk 48
+Test loss = 45.7578
+
+
+confusion matrix:
+[[106021      0]
+ [   918     11]]
+accuracy = 0.9914165735244751
+precision class 0 = 0.9914156794548035
+precision class 1 = 1.0
+recall class 0 = 1.0
+recall class 1 = 0.01184068899601698
+AUC of ROC = 0.809216696706379
+AUC of PRC = 0.08626946199440506
+min(+P, Se) = 0.10359408033826638
+
+-----------------------------------------------------
+Test 3: 400 sample (random shuffle) (76, 360, 36)
+Testing model ... 
+last saved model is in chunk 49
+Test loss = 51.1620
+
+
+confusion matrix:
+[[102000     30]
+ [  1034     12]]
+accuracy = 0.9896775484085083
+precision class 0 = 0.989964485168457
+precision class 1 = 0.2857142984867096
+recall class 0 = 0.999705970287323
+recall class 1 = 0.011472275480628014
+AUC of ROC = 0.8175128308342559
+AUC of PRC = 0.08302070598073025
+min(+P, Se) = 0.1586998087954111
+
+-------------------------------------------------------
+Test 4: 400 new sample (random shuffle) (76, 384, 3)
+Testing model ... 
+last saved model is in chunk 49
+Test loss = 46.4994
+
+
+confusion matrix:
+[[101913    117]
+ [  1026     20]]
+accuracy = 0.9889110922813416
+precision class 0 = 0.9900329113006592
+precision class 1 = 0.14598539471626282
+recall class 0 = 0.9988532662391663
+recall class 1 = 0.019120458513498306
+AUC of ROC = 0.818724425706907
+AUC of PRC = 0.08149379589150109
+min(+P, Se) = 0.15009560229445507
