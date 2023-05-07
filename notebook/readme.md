@@ -1,7 +1,7 @@
 1. Preprocessing stage applies the [MIMIC-III Benchmarks](https://github.com/YerevaNN/mimic3-benchmarks/) workflow.
 2. Training Platform: Google Colab  Premium & Google Drive
 
-# summary of the report and findings (Reproducibility Summary, about 200 words)
+# Reproducibility Summary
 
 # Overview of the data with any helpful charts and visualizations from the report and ideally directly using
 the dataset in the notebook (maybe link to the data folder or URL).
