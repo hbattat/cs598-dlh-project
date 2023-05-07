@@ -6,4 +6,4 @@
 
 4.trained_model is trained by full MIMIC-III decompensation train set. 
 
-5.Training Platform: Google Colab Premium
+5.parameter_tuning_results.txt contains the test result of the model with hidden dimention of 72 and chunk size of 36
